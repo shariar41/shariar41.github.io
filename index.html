@@ -11,7 +11,7 @@
     Fore more details:
     * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
   -->
-
+<!--  <base href="https://github.com/shariar41/shariar-islam-resume">-->
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="description" content="A Self taught flutter developer, technical writer and open source contributor.">
@@ -20,10 +20,10 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="folio">
-  <link rel="apple-touch-icon" href="icons/Icon-512.png"><!--Icon-192.png-->
+  <link rel="apple-touch-icon" href="icons/Icon-192.jpg"><!--Icon-192.png-->
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="icon" type="image/png" href="favicon3.jpg"/>
 
   <title>Saimon</title>
   <link rel="manifest" href="manifest.json">
@@ -35,8 +35,17 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=237734783');
+        navigator.serviceWorker.register('flutter_service_worker.js?v=305483823');
       });
+    }
+  </script>
+  <!-- IMPORTANT: load pdfjs files -->
+  <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.6.347/build/pdf.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdn.jsdelivr.net/npm/pdfjs-dist@2.6.347/build/pdf.worker.min.js";
+    pdfRenderOptions = {
+      cMapUrl: 'https://cdn.jsdelivr.net/npm/pdfjs-dist@2.6.347/cmaps/',
+      cMapPacked: true,
     }
   </script>
   <script src="main.dart.js" type="application/javascript"></script>
